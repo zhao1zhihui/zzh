@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+	
+		@-webkit-keyframes rock{
+			0%{transform: rotate(0deg);}
+			10%{transform: rotate(3deg);}
+			20%{transform: rotate(-3deg);}
+			30%{transform: rotate(2deg);}
+			40%{transform: rotate(-2deg);}
+			50%{transform: rotate(1deg);}
+			60%{transform: rotate(-1deg);}
+			70%{transform: rotate(0deg);}
+			100%{transform: rotate(0deg);}
+			
+		}
+		
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background: #000;
+			min-width: 1200px;
+			min-height: 600px;
+			-webkit-font-smoothing: antialiased;
+			font-family: simsun;
+		}
+		.main{
+			width: 1200px;
+			height: 600px;
+			background: #000 url(img/bg.jpg);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -600px;
+			margin-top: -300px;
+			overflow: hidden;
+		}
+		.c_box{
+			width: 312px;
+			height: 305px;
+			position: absolute;
+			left: 700px;
+			top: 184px;
+		}
+		.c_box_rock{
+			-webkit-animation: rock 2s infinite;
+		}
+		.c_zongzi{
+			width: 312px;
+			height: 305px;
+			background: url(img/zz.png);
+			
+		}
+		.c_shengzi_1{
+			width: 218px;
+			height: 180px;
+			background: url(img/line_1.png);
+			position: absolute;
+			left: 10px;
+			top: 120px;
+		}
+		.c_zongzirot{
+			width: 288px;
+			height: 206px;
+			background: url(img/zzr_1.png);
+			position: absolute;
+			background-size: 288px 206px;
+			left: 50px;
+			top: 34px;
+			z-index: 110;
+			opacity: 0;
+			display: none;
+			transition: all 1s;
+		}
+		.c_zouye{
+			width: 114px;
+			height: 266px;
+			background: url(img/leaf_left.png);
+			position: absolute;
+			left: 0px;
+			top: -34px;
+			z-index: 1;
+			opacity: 0;
+			display: none;
+			transition: all 1s;
+		}
+		.c_youye{
+			width: 318px;
+			height: 338px;
+			background: url(img/leaf_right.png);
+			position: absolute;
+			left: 80px;
+			top: -60px;
+			z-index: 111;
+			opacity: 0;
+			display: none;
+			transition: all 1s;
+		}
+		
+		.c_zhankai{
+			width: 618px;
+			height: 468px;
+			background: url(img/leaf_expand.png);
+			position: absolute;
+			left: -150px;
+			top: -45px;
+			z-index: 99;
+			opacity: 0;
+			display: none;
+			transition: all 1s;
+		}
+		.c_t_1{
+			width: 180px;
+			height: 100px;
+			background: url(img/t_jixiang.png);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -70px;
+			margin-top: -50px;
+			z-index: 200;
+			transform-origin: center center;
+			transform: scale(.8);
+			opacity: 0;
+			display: none;
+			transition: all 1s;
+		}
+		.c_t_2{
+			width: 180px;
+			height: 100px;
+			background: url(img/t_ruyi.png);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -70px;
+			margin-top: -50px;
+			z-index: 200;
+			transform-origin: center center;
+			transform: scale(.8);
+			opacity: 0;
+			display: none;
+			transition: all 1s;		
+			}
+			.text{
+				width: 400px;
+				height: 370px;
+				left: 180px;
+				top: 140px;
+				font-size: 14px;
+				line-height: 20px;
+				position: absolute;
+				color: #333;
+			}
+			.text_In{
+				
+			}
+			.text .caption{
+				width: 400px;
+				height: 240px;
+				background: url(img/caption.png) no-repeat;
+				margin-left: 40px;	
+				opacity: 0;	
+				transition: all 1s;
+			}
+			.text .to{
+				width: 400px;
+				margin-top: 10px;
+				margin-left: 40px;
+				opacity: 0;	
+				transition: all 1s 0.5s;
+			}
+			.text .msg{
+				width: 400px;
+				margin-top: 10px;
+				margin-left: 40px;
+				opacity: 0;	
+				transition: all 1s 1s
+			}
+			.text .from{
+				width: 400px;
+				margin-top: 10px;
+				margin-left: 40px;
+				opacity: 0;	
+				transition: all 1s 1.5s;
+			}
+			.text_In .caption,
+			.text_In .to,
+			.text_In .from,
+			.text_In .msg{
+				opacity: 1;	
+			    margin-left: 0px;
+			}
+	</style>
+	<body>
+		<div class="main">
+			<div class="c_box c_box_rock">
+				<div class="c_zongzi">
+				  
+			    </div>
+			    <div class="c_shengzi_1">
+				
+			     </div>
+			     <div class="c_zongzirot">
+			     	
+			     </div>
+			     <div class="c_zouye">
+			     	
+			     </div>
+			     <div class="c_youye">
+			     	
+			     </div>
+			     <div class="c_zhankai">
+			     	
+			     </div>
+			     <div class="c_t_1">
+			     	
+			     </div>
+			     <div class="c_t_2">
+			     	
+			     </div>
+			</div>
+			<div class="text">
+				<div class="caption">
+					
+				</div>
+				<div class="to">
+					慕课网小伙伴
+				</div>
+				<div class="msg">
+					慕课网小伙伴
+				</div>
+				<div class="from">
+					慕课网小伙伴
+				</div>
+			</div>
+		</div>
+		<?php
+          echo "hello world";
+        ?>
+	</body>
+</html>
