@@ -20,6 +20,7 @@
     NSLog(@"33333");
     NSLog(@"22222");
     NSLog(@"ma");
+    NSLog(@"dev3");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
