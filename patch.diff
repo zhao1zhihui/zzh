@@ -1,0 +1,55 @@
+From 23854415f02f15c3cef7ee5711286c53191c5dc7 Mon Sep 17 00:00:00 2001
+From: dccb-wbzhaozh <dccb-wbzhaozh@sdc.icbc.com.cn>
+Date: Wed, 9 Jun 2021 14:29:32 +0800
+Subject: [PATCH] =?UTF-8?q?=E6=88=91=E4=BF=AE=E6=94=B9=E4=BA=86?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ gitDemo/gitDemo/ViewController.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gitDemo/gitDemo/ViewController.h b/gitDemo/gitDemo/ViewController.h
+index 60a9cba..c4f9563 100644
+--- a/gitDemo/gitDemo/ViewController.h
++++ b/gitDemo/gitDemo/ViewController.h
+@@ -10,6 +10,6 @@
+ 
+ @interface ViewController : UIViewController
+ 
+-// 我不拉取直接提交
++// 我不拉取直接提交+++++
+ @end
+ 
+-- 
+2.27.0
+
+From 7a132b5fd94cfbc3b3ca8085d270310585daae33 Mon Sep 17 00:00:00 2001
+From: dccb-wbzhaozh <dccb-wbzhaozh@sdc.icbc.com.cn>
+Date: Wed, 9 Jun 2021 14:29:07 +0800
+Subject: [PATCH] =?UTF-8?q?=E6=88=91=E4=BF=AE=E6=94=B9=E4=BA=86?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ gitDemo/gitDemo/ViewController.m | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gitDemo/gitDemo/ViewController.m b/gitDemo/gitDemo/ViewController.m
+index 0963d74..fbb4c6e 100644
+--- a/gitDemo/gitDemo/ViewController.m
++++ b/gitDemo/gitDemo/ViewController.m
+@@ -23,7 +23,7 @@
+     NSLog(@"dev3");
+     
+     
+-    // 我修改了文件
++    // 我修改了文件++++++
+     // Do any additional setup after loading the view, typically from a nib.
+ }
+ 
+-- 
+2.27.0
+
