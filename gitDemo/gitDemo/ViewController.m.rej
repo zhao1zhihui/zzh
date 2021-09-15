@@ -1,0 +1,11 @@
+diff a/gitDemo/gitDemo/ViewController.m b/gitDemo/gitDemo/ViewController.m	(rejected hunks)
+@@ -21,6 +21,9 @@
+     NSLog(@"22222");
+     NSLog(@"ma");
+     NSLog(@"dev3");
++    
++    
++    // 我修改了文件
+     // Do any additional setup after loading the view, typically from a nib.
+ }
+ 

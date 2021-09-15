@@ -1,0 +1,9 @@
+diff a/gitDemo/gitDemo/ViewController.h b/gitDemo/gitDemo/ViewController.h	(rejected hunks)
+@@ -10,6 +10,6 @@
+ 
+ @interface ViewController : UIViewController
+ 
+-
++// 我不拉取直接提交
+ @end
+ 
